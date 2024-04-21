@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Series</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar-brand i {
+            margin-right: 5px;
+        }
+
+        .table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <span class="navbar-brand">
+            <i class="fa fa-television" aria-hidden="true"></i>
+            TV Series
+        </span>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Popular TV Series</h5>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                        </tr>
+                    </thead>
+                    <tbody id="series-table">
+                        <!-- Table rows will be added dynamically here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
